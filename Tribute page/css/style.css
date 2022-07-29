@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+}
+
+
+/* //////////////////////////
+Hero
+////////////////////////// */
+
+#bg-vid {
+    background-size: cover;
+    object-fit: cover;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    padding: 2rem;
+}
+
+.nav-link:link, .nav-link:visited {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(178, 178, 29);
+    letter-spacing: .3rem;
+    transition: all .3s;
+}
+
+.nav-link:active, .nav-link:hover {
+    color: white;
+}
+
+.nav-button {
+    border-radius: 100rem;
+    background-color: rgb(178, 178, 29);;
+    height: 5rem;
+    width: 15rem;
+    border: none;
+}
+
+.nav-button::before  {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.nav-link-logo {
+    transform: translate(.5rem, .1rem);
+    height: 4rem;
+}
