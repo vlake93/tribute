@@ -1,75 +1,179 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-html {
+    font-family: sans-serif;
+    background-color: #555;
+  }
+  
+  html {
     font-size: 62.5%;
-}
-
-body {
-    position: relative;
-}
-
-
-/* //////////////////////////
-Hero
-////////////////////////// */
-
-#bg-vid {
-    background-size: cover;
-    object-fit: cover;
-    position: fixed;
+  }
+  
+  .header {
     height: 100vh;
-    width: 100vw;
-    z-index: -1;
-}
-
-.header {
-    display: flex;
-}
-
-
-.nav {
+    background-image: linear-gradient(
+        rgba(200, 200, 200, 0.1),
+        rgba(200, 200, 200, 0.1)
+      ),
+      url(../images/pexels-zeeshaan-shabbir-8083527.jpg);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .logo {
+    height: 10rem;
+    cursor: pointer;
+    background-color: #fff0;
+    margin-top: 6rem;
+    margin-left: 6rem;
+  }
+  
+  .nav {
+    background-color: #fff0;
+    margin-top: 10rem;
+    margin-right: 6rem;
+  }
+  
+  .nav-links,
+  .nav-links li,
+  .nav-links a {
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    justify-content: end;
+    background-color: #fff0;
+    color: #fff;
+  }
+  
+  .btn {
+    color: #000 !important;
+  }
+  
+  .flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 9rem;
-    padding: 2rem;
-}
-
-.nav-link:link, .nav-link:visited {
-    font-size: 2.5rem;
-    margin-right: 1rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgb(178, 178, 29);
-    letter-spacing: .3rem;
-    transition: all .3s;
-}
-
-.nav-link:active, .nav-link:hover {
-    color: white;
-}
-
-.nav-button {
-    border-radius: 100rem;
-    background-color: rgb(178, 178, 29);;
-    height: 5rem;
-    width: 15rem;
-    border: none;
-}
-
-.nav-button::before  {
-    content: "";
+    align-content: center;
+  }
+  
+  .flex-end {
+    display: flex;
+    justify-content: end;
+    gap: 5rem;
+  }
+  
+  .heading-primary {
+    font-size: 8rem;
     position: absolute;
+    color: #fff;
+    background-color: #fff0;
+    text-transform: uppercase;
+    top: 20rem;
+    left: 20rem;
+    letter-spacing: 2rem;
+    font-weight: 700;
+    transition: all 0.5;
+    /* transform: translateX(-200%); */
+  }
+  
+  span {
+    background-color: #fff0;
+  }
+  
+  .who {
+    font-size: 8.5rem;
+    font-weight: 700;
+    position: relative;
+    top: 28.5rem;
+    left: -8rem;
+    color: #000;
+    -webkit-text-stroke: 0.1rem #fff;
+    transform: translateX(0);
+  }
+  
+  .gotham {
+    position: absolute;
+    top: 42rem;
+    left: 10rem;
+    color: rgb(254, 254, 3);
+    -webkit-text-stroke: 0.3rem #000;
+    transform: translateX(0);
+  }
+  
+  .section-about {
+    padding: 15rem 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 2rem 4rem;
+    border-radius: 10rem;
+    transform: translate(0, -2rem);
+    background-color: rgb(254, 254, 3e) !important;
+  }
+  
+  .btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(254, 254, 3);
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
+    border-radius: 10rem;
+    z-index: -1;
     opacity: 1;
-}
-
-.nav-link-logo {
-    transform: translate(.5rem, .1rem);
-    height: 4rem;
-}
+    transition: all 0.5s;
+  }
+  
+  .btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  
+  
+  @media (max-width: 119em) {
+    html {
+      font-size: 50%;
+    }
+  }
+  
+  @media (max-width: 100em) {
+    html {
+      font-size: 40%;
+    }
+  }
+  
+  @media (max-width: 79em) {
+    html {
+      font-size: 30%;
+    }
+  }
+  
+  @media (max-width: 59.5em) {
+    html {
+      font-size: 20%;
+    }
+  }
+  
+  @media (max-width: 40em) {
+    html {
+      font-size: 15%;
+    }
+  }
+  
+  @media (max-width: 30em) {
+    html {
+      font-size: 10%;
+    }
+  
+    .header {
+      height: 50vh;
+    }
+  }
+  

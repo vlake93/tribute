@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Batman's tribute page</title>
-</head>
-<body>
-    <header class="header">
-        <video autoplay muted loop id="bg-vid">
-            <source src="images/landing-vid.mp4" type="video/mp4">
-        </video>
-        <nav class="nav">
-            <!-- <img class="header-logo" src="images/button-logo.png" alt="Batman logo"> -->
-            <a class="nav-link" href="">Home</a>
-            <a class="nav-link" href="">About</a>
-            <button class="nav-button"><a class="nav-link" href="" target="_blank"><img class="nav-link-logo" src="images/button-logo.png" alt=""></a></button>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman's Tribute Page</title>
+
+    <!-- FONTS -->
+    
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #ddd0">
+    <header class="header flex" id="header">
+      <img
+        class="logo u-margin-top-lg u-margin-left-lg"
+        src="images/button-logo.png"
+        alt="batman logo"
+      />
+      <nav class="nav u-margin-top-xxl u-margin-right-lg">
+        <ul class="nav-links flex-end">
+          <li>
+            <a href="#header">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a class="btn" href="#">More info</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="heading-primary">
+        <span class="who">Who protects</span><span class="gotham">gotham?</span>
+      </h1>
     </header>
-</body>
+    <main>
+      <section class="section-about" id="about">
+        <h2 class="heading-secondary text-center">About me</h2>
+      </section>
+    </main>
+  </body>
 </html>
