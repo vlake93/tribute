@@ -188,8 +188,14 @@ span {
 }
 
 /* SECTION ENEMIES */
-/* .section-enemies {
+.section-enemies {
   background-color: #fff0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/enemies.jpg);
+}
+
+.section-enemies h2 {
+  -webkit-text-stroke: 0.15rem #000;
 }
 
 .section-enemies-container {
@@ -199,13 +205,20 @@ span {
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-content: center;
-  gap: 5rem;
+  gap: 8rem;
+  border-radius: 10rem;
 }
 
 .section-enemies-image {
   width: 22rem;
   height: 22rem;
-} */
+  transition: all 0.3s;
+  justify-self: center;
+}
+
+.section-enemies-image:hover {
+  transform: scale(1.2);
+}
 
 /* FOOTER */
 .footer {
