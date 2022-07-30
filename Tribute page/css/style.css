@@ -140,6 +140,7 @@ span {
   text-align: center;
   -webkit-text-stroke: 0.25rem #000;
   color: rgb(254, 254, 3);
+  background-color: #fff0;
 }
 
 .about-batman-container {
@@ -185,6 +186,26 @@ span {
 .about-text:not(:last-child) {
   margin-bottom: 5rem;
 }
+
+/* SECTION ENEMIES */
+/* .section-enemies {
+  background-color: #fff0;
+}
+
+.section-enemies-container {
+  background-color: #fff0;
+  padding: 2rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  gap: 5rem;
+}
+
+.section-enemies-image {
+  width: 22rem;
+  height: 22rem;
+} */
 
 /* FOOTER */
 .footer {
