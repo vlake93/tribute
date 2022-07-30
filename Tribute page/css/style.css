@@ -196,8 +196,11 @@ span {
 /* ///////////////////////////// */
 .section-enemies {
   background-color: #fff0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/enemies.jpg);
+  background-image: linear-gradient(
+      rgba(40, 40, 40, 0.4),
+      rgba(40, 40, 40, 0.4)
+    ),
+    url(../images/enemies-2.jpg);
 }
 
 /* .section-enemies h2 {
